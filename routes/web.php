@@ -109,4 +109,14 @@ Route::middleware(['auth'])->group(function () {
 
     Route::delete('/profile', [ProfileController::class, 'destroy'])
         ->name('profile.destroy');
+
+    Route::middleware(['auth'])->group(function () {
+
+    Route::get('/laporan', [App\Http\Controllers\ReportController::class, 'index'])
+        ->name('reports.index');
+
+    Route::get('/laporan/pdf', [App\Http\Controllers\ReportController::class, 'pdf'])
+        ->name('reports.pdf');
+
+});
 });

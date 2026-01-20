@@ -52,37 +52,53 @@
             </div>
 
             <!-- TRANSAKSI -->
-            <div>
-                <p class="text-xs uppercase text-pink-200 mb-2 tracking-wider">
-                    Transaksi
-                </p>
+<div>
+    <p class="text-xs uppercase text-pink-200 mb-2 tracking-wider">
+        Transaksi
+    </p>
 
-                <a href="{{ route('orders.index') }}"
-                   class="flex items-center gap-3 px-4 py-2 rounded-lg transition
-                   {{ request()->routeIs('orders.*') ? 'bg-pink-600 font-semibold' : 'hover:bg-pink-600' }}">
+    <!-- ORDERS -->
+    <a href="{{ route('orders.index') }}"
+       class="flex items-center gap-3 px-4 py-2 rounded-lg transition
+       {{ request()->routeIs('orders.*') ? 'bg-pink-600 font-semibold' : 'hover:bg-pink-600' }}">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
-                         viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0H4m16 0l-1.5 7h-13L4 13" />
-                    </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0H4m16 0l-1.5 7h-13L4 13" />
+        </svg>
 
-                    Orders
-                </a>
+        Orders
+    </a>
 
-                <a href="{{ route('notifications.index') }}"
-                   class="flex items-center gap-3 px-4 py-2 rounded-lg transition
-                   {{ request()->routeIs('notifications.*') ? 'bg-pink-600 font-semibold' : 'hover:bg-pink-600' }}">
+    <!-- NOTIFIKASI -->
+    <a href="{{ route('notifications.index') }}"
+       class="flex items-center gap-3 px-4 py-2 rounded-lg transition
+       {{ request()->routeIs('notifications.*') ? 'bg-pink-600 font-semibold' : 'hover:bg-pink-600' }}">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
-                         viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M15 17h5l-1.4-1.4A2 2 0 0118 14.2V11a6 6 0 00-12 0v3.2c0 .5-.2 1-.6 1.4L4 17h5m6 0a3 3 0 01-6 0" />
-                    </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 17h5l-1.4-1.4A2 2 0 0118 14.2V11a6 6 0 00-12 0v3.2c0 .5-.2 1-.6 1.4L4 17h5m6 0a3 3 0 01-6 0" />
+        </svg>
 
-                    Notifikasi
-                </a>
-            </div>
+        Notifikasi
+    </a>
+
+    <!-- LAPORAN -->
+    <a href="{{ route('reports.index') }}"
+       class="flex items-center gap-3 px-4 py-2 rounded-lg transition
+       {{ request()->routeIs('reports.*') ? 'bg-pink-600 font-semibold' : 'hover:bg-pink-600' }}">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 17v-6m4 6V7m4 10V11M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+
+        Laporan
+    </a>
+</div>
 
         </nav>
 
